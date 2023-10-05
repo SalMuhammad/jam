@@ -1,0 +1,87 @@
+*{
+ margin: 0;
+ padding: 0;
+ color: white;
+ text-align: center;
+ /* line-height: 0; */
+ --heightNangtung:34%;
+ --widthSare:50%;
+ --topAtas:10px;
+ --topBawah:60%;
+ --leftSare:7px;
+}
+body{
+ background-color: black;
+}
+
+.papan{
+ margin-top: 200px;
+}
+
+figure{
+ display: flex;
+ width: 430px;
+ margin: 50px auto;
+ justify-content: space-between;
+}
+
+.jam, .menit, .detik{
+ display: flex;
+ gap: 12px;
+}
+
+figure > div .light{
+ position: relative;
+ height: 100px;
+ width: 50px;
+ transform: skewX(-5deg);
+}
+figure > div .light{
+ /* background-color: rgb(97, 97, 97); */
+}
+figure > div .light:last-child{
+ /* background-color: rgb(163, 163, 163); */
+}
+
+figure > div .light span{
+ position: absolute;
+ border-radius: 10px;
+ display: inline-block;
+ padding: 5px;
+}
+
+.light span:nth-child(1){
+ height: var(--heightNangtung);
+ top: var(--topAtas);
+ left: 0;
+}
+.light span:nth-child(2){
+ width: var(--widthSare);
+ top: 0;
+ left: var(--leftSare);
+}
+.light span:nth-child(3){
+ height: var(--heightNangtung);
+ top: var(--topAtas);
+ right: 0;
+}
+.light span:nth-child(4){
+ height: var(--heightNangtung);
+ top: var(--topBawah);
+ right: 0;
+}
+.light span:nth-child(5){
+ width: var(--widthSare);
+ bottom: -12px;
+ left: var(--leftSare);
+}
+.light span:nth-child(6){
+ height: var(--heightNangtung);
+ top: var(--topBawah);
+ left: 0;
+}
+.light span:nth-child(7){
+width: var(--widthSare);
+ top: 52%;
+ left: var(--leftSare);
+}
